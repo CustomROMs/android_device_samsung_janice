@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := janice
-PRODUCT_NAME := lineage_janice
+PRODUCT_NAME := cm_janice
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9070
 PRODUCT_MANUFACTURER := samsung
