@@ -1,0 +1,4 @@
+index,Name,Data
+0,Version,0.0.1
+1,VoiceCallSampleRate,auto
+2,LoopbackDelay,700
