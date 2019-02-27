@@ -13,10 +13,12 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/janice/bluetooth
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/samsung/janice/vibrator/vibrator.c
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/janice/rootdir/fstab.samsungjanice
+#TARGET_RECOVERY_FSTAB := device/samsung/janice/rootdir/fstab.samsungjanice
 
 # Hardware tunables (device parts replacement)
 BOARD_HARDWARE_CLASS := device/samsung/janice/cmhw
 
 # Disable legacy sensors using because janice has gyro
 BOARD_USE_LEGACY_SENSORS_FUSION := false
+
+#TARGET_NO_RECOVERY := true
