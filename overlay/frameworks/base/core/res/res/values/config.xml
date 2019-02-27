@@ -67,7 +67,7 @@
     </integer-array>
     
     <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">4</integer>
+<!--    <integer name="config_multiuserMaximumUsers">4</integer> -->
     
     
     <!-- Whether WiFi display is supported by this device.
@@ -82,6 +82,6 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">true</bool>
+<!--    <bool name="config_enableWifiDisplay">true</bool>-->
 
 </resources>
