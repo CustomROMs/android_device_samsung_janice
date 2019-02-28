@@ -3,6 +3,7 @@ import /init.u8500.rc
 on fs
     exec /sbin/genfstab
     mount_all /fstab.samsungjanice
+    start mylogger
     swapon_all /fstab.samsungjanice
 
 on post-fs
@@ -149,5 +150,11 @@ on property:ro.data.large_tcp_window_size=true
 
 service hostapd_bin /system/bin/hostapd -dd /data/misc/wifi/hostapd.conf
     socket wpa_wlan0 dgram 660 wifi wifi
+    disabled
+    oneshot
+
+service mylogger /system/bin/logger.sh
+    user root
+    group log
     disabled
     oneshot

@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 
 #    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/janice \
 
+# Logger
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/logger.sh:/system/bin/logger.sh
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/adm.sqlite-u8500:system/etc/adm.sqlite-u8500
