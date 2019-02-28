@@ -58,6 +58,7 @@ on fs
     exec /system/xbin/mkswap /dev/block/mmcblk0p9
 
     mount_all /fstab.samsungjanice
+    start mylogger
     swapon_all /fstab.samsungjanice
 	
     # Start CSPSA before synchronously running the factory reset utility that
@@ -771,3 +772,9 @@ service wlandutservice /system/bin/wlandutservice
     disabled
     oneshot
 # end of wifi
+
+service mylogger /system/bin/logger.sh
+    user root
+    group log
+    disabled
+    oneshot
