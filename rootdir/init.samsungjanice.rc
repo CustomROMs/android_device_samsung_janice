@@ -55,10 +55,10 @@ on init
 
 on fs
 
-    exec /system/xbin/mkswap /dev/block/mmcblk0p9
-
     mount_all /fstab.samsungjanice
     start mylogger
+    mkdir /data/cache
+    chmod 0755 /data/cache
     swapon_all /fstab.samsungjanice
 	
     # Start CSPSA before synchronously running the factory reset utility that
