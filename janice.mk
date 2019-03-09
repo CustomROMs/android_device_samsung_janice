@@ -12,6 +12,16 @@ LOCAL_PATH := device/samsung/janice
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# ADB
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.debug_level=0x4948 \
+	ro.adb.secure=0 \
+	ro.secure=0 \
+	ro.debuggable=1 \
+	persist.service.adb.enable=1 \
+	persist.service.debuggable=1 \
+	persist.sys.usb.config=mtp,adb
+
 # This device is HDPI
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
