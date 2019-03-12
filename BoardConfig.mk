@@ -3,7 +3,7 @@
 TARGET_OTA_ASSERT_DEVICE := janice,i9070,GT-I9070
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/u8500
+TARGET_KERNEL_SOURCE := kernel
 TARGET_KERNEL_CONFIG := janice_defconfig
 
 # Bluetooth
