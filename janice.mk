@@ -46,8 +46,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml
 
-#    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/janice \
-
 # Logger
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/logger.sh:/system/bin/logger.sh
@@ -55,9 +53,6 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/adm.sqlite-u8500:system/etc/adm.sqlite-u8500
-
-#PRODUCT_PACKAGES += \
-#    tinyplay
 
 # Use non-open-source parts if present
 $(call inherit-product-if-exists, vendor/samsung/u8500-common/janice/janice-vendor-blobs.mk)
